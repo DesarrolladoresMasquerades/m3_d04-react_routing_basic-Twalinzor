@@ -8,9 +8,9 @@ function Navbar() {
         {/* <Link to="/about"> About </Link> */}
         {/* <Link to="/projects"> Projects </Link> */}
 
-        <NavLink exact to="/" activeClassName="selected"> Home </NavLink>
-        <NavLink to="/about" activeClassName="selected"> About </NavLink>
-        <NavLink to="/projects" activeClassName="selected"> Projects </NavLink>
+        <NavLink exact to="/" className={({isActive})=>isActive?"selected":""}> Home </NavLink>
+        <NavLink to="/about" className={({isActive})=>isActive?"selected":""}> About </NavLink>
+        <NavLink to="/projects" className={({isActive})=>isActive?"selected":""}> Projects </NavLink>
       </ul>
     </nav>
   );

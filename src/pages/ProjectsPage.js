@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function ProjectsPage (props) {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(props.projects);
 
   return (
     <div>
